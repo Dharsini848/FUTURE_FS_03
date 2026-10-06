@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Leaf | Pure Vegetarian Restaurant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <div class="logo">
+        🌿 Green <span>Leaf</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#why">Why Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#menu" class="nav-btn">Order Food</a>
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">100% PURE VEGETARIAN</p>
+
+        <h1>
+            Taste That Feels<br>
+            <span>Like Home</span>
+        </h1>
+
+        <p class="hero-text">
+            Authentic South Indian flavours made fresh every day
+            with love, quality and tradition.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#menu" class="primary-btn">Explore Menu</a>
+            <a href="#contact" class="secondary-btn">Contact Us</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+
+    <div class="about-image">
+        <img src="https://i.pinimg.com/236x/39/17/2c/39172cc421f4ffa9d32af78a187a437b.jpg">
+    </div>
+
+    <div class="about-content">
+
+        <p class="section-label">ABOUT GREEN LEAF</p>
+
+        <h2>Fresh Food.<br>Traditional Taste.</h2>
+
+        <p>
+            Green Leaf is a pure vegetarian restaurant serving
+            authentic South Indian and Indian vegetarian cuisine.
+        </p>
+
+        <p>
+            From crispy dosas and soft idlis to delicious meals,
+            biryani and traditional desserts, every dish is prepared
+            using fresh ingredients.
+        </p>
+
+        <div class="about-points">
+
+            <div>
+                <strong>🌱</strong>
+                <span>100% Vegetarian</span>
+            </div>
+
+            <div>
+                <strong>👨‍🍳</strong>
+                <span>Freshly Prepared</span>
+            </div>
+
+            <div>
+                <strong>✨</strong>
+                <span>Quality Ingredients</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MENU -->
+<section class="menu-section" id="menu">
+
+    <div class="section-heading">
+
+        <p class="section-label">OUR SPECIAL MENU</p>
+
+        <h2>Something Delicious<br>For Everyone</h2>
+
+        <p>
+            Breakfast, lunch, dinner and desserts —
+            choose your favourite.
+        </p>
+
+    </div>
+
+
+    <!-- MENU BUTTONS -->
+
+    <div class="menu-buttons">
+
+        <button class="menu-btn active"
+                onclick="showCategory('breakfast', this)">
+            Breakfast
+        </button>
+
+        <button class="menu-btn"
+                onclick="showCategory('lunch', this)">
+            Lunch
+        </button>
+
+        <button class="menu-btn"
+                onclick="showCategory('dinner', this)">
+            Dinner
+        </button>
+
+        <button class="menu-btn"
+                onclick="showCategory('dessert', this)">
+            Desserts
+        </button>
+
+    </div>
+
+
+    <!-- BREAKFAST -->
+
+    <div class="food-grid category" id="breakfast">
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm4_6Bd4Mx7T1y8Fsmi6uAqn08nLSwQEcOUIBEtQF68A&s=10" alt="Idli">
+
+            <div class="food-content">
+
+                <div>
+                    <h3>Idli</h3>
+                    <p>Soft steamed rice cakes with sambar & chutney.</p>
+                </div>
+
+                <div class="food-bottom">
+                    <strong>₹60</strong>
+
+                    <button onclick="orderFood('Idli')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzx1O-LjIZrGRaK8g2MY_eNyscZDxx3bhopl5l7jeoAA&s=10" alt="Masala Dosa">
+
+            <div class="food-content">
+
+                <div>
+                    <h3>Masala Dosa</h3>
+                    <p>Crispy dosa filled with delicious potato masala.</p>
+                </div>
+
+                <div class="food-bottom">
+                    <strong>₹80</strong>
+
+                    <button onclick="orderFood('Masala Dosa')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmgHqc2_ng6k4dxCRb7EqruzzORKHimutSL6ajFspZQC_pUgowW5Mu_bg&s=10" alt="Medu Vada">
+
+            <div class="food-content">
+
+                <div>
+                    <h3>Medu Vada</h3>
+                    <p>Crispy outside and soft inside, served with sambar.</p>
+                </div>
+
+                <div class="food-bottom">
+                    <strong>₹55</strong>
+
+                    <button onclick="orderFood('Medu Vada')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7d6gLNOtaLwQkaPUClo56Nb_hO6g04WkoV7MihlazQpo2f0xUMms-x9LM&s=10" alt="Poori">
+
+            <div class="food-content">
+
+                <div>
+                    <h3>Poori Masala</h3>
+                    <p>Fluffy golden poori with traditional potato masala.</p>
+                </div>
+
+                <div class="food-bottom">
+                    <strong>₹70</strong>
+
+                    <button onclick="orderFood('Poori Masala')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSxkfQP5TdcdwL9w6oF9tnJLCpPv_L0wCrfTyH6izq5w&s=10" alt="Ven Pongal">
+
+            <div class="food-content">
+
+                <div>
+                    <h3>Ven Pongal</h3>
+                    <p>Traditional rice and dal pongal with chutney.</p>
+                </div>
+
+                <div class="food-bottom">
+                    <strong>₹65</strong>
+
+                    <button onclick="orderFood('Ven Pongal')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqqbrE3aa4EQ8Eu56XgxIFSPu1P0bh6TEVnR_NwRiyzXsK8ATyJEfTA4Q&s=10" alt="Idiyappam">
+
+            <div class="food-content">
+
+                <div>
+                    <h3>Idiyappam</h3>
+                    <p>Soft rice noodles served with coconut milk.</p>
+                </div>
+
+                <div class="food-bottom">
+                    <strong>₹75</strong>
+
+                    <button onclick="orderFood('Idiyappam')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- LUNCH -->
+
+    <div class="food-grid category hidden" id="lunch">
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0770jX13pTUHSk9hnVgYoOEJlDEILqMVBc5F4mS8Ps9-ylvuy5qmQTNA&s=10" alt="South Indian Meals">
+
+            <div class="food-content">
+
+                <h3>South Indian Meals</h3>
+
+                <p>
+                    Rice, sambar, poriyal, rasam, curd,
+                    appalam and dessert.
+                </p>
+
+                <div class="food-bottom">
+                    <strong>₹150</strong>
+
+                    <button onclick="orderFood('South Indian Meals')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGeN3GMV3WhcMHB3mYeMF-hNy9_m0I4xpMcfNuShipSQ&s=10" alt="Vegetable Biryani">
+
+            <div class="food-content">
+
+                <h3>Vegetable Biryani</h3>
+
+                <p>
+                    Aromatic basmati rice cooked with
+                    fresh vegetables and spices.
+                </p>
+
+                <div class="food-bottom">
+                    <strong>₹140</strong>
+
+                    <button onclick="orderFood('Vegetable Biryani')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNRAJddq0LCEzWGg49VFB7bHePsA791jQ2NA-RlfhSSw&s=10" alt="Mushroom Biryani">
+
+            <div class="food-content">
+
+                <h3>Mushroom Biryani</h3>
+
+                <p>
+                    Flavourful biryani prepared with
+                    fresh mushrooms.
+                </p>
+
+                <div class="food-bottom">
+                    <strong>₹160</strong>
+
+                    <button onclick="orderFood('Mushroom Biryani')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpkSoP4F60N9l0oljXFAj1MeeJTXWCZKmNz6radTSRKQ&s=10" alt="Gobi 65">
+
+            <div class="food-content">
+
+                <h3>Gobi 65</h3>
+
+                <p>
+                    Crispy cauliflower tossed with
+                    South Indian spices.
+                </p>
+
+                <div class="food-bottom">
+                    <strong>₹120</strong>
+
+                    <button onclick="orderFood('Gobi 65')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvxSCqdH3iwuKSlBRHduxRLh0abFgTJtsIAzuR6waACw&s=10" alt="Paneer 65">
+
+            <div class="food-content">
+
+                <h3>Paneer 65</h3>
+
+                <p>
+                    Crispy paneer pieces with aromatic spices.
+                </p>
+
+                <div class="food-bottom">
+                    <strong>₹140</strong>
+
+                    <button onclick="orderFood('Paneer 65')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSopP62CgZVDSVWGRlLNEaUlRYIFuX0_NLBznKvozwZ6Q&s=10" alt="Variety Rice">
+
+            <div class="food-content">
+
+                <h3>Variety Rice</h3>
+
+                <p>
+                    Tomato Rice,Lemon Rice,Curd Rice,coconut Rice,Sambar Rice
+                </p>
+
+                <div class="food-bottom">
+                    <strong>₹80</strong>
+
+                    <button onclick="orderFood('Variety Rice')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- DINNER -->
+
+    <div class="food-grid category hidden" id="dinner">
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcA1Aa6Q0S8UshLiR_ifkL-JHCdths5Hk9E9lFP3apRA&s=10" alt="Plain Dosa">
+
+            <div class="food-content">
+
+                <h3>Plain Dosa</h3>
+
+                <p>Crispy golden dosa with chutney and sambar.</p>
+
+                <div class="food-bottom">
+                    <strong>₹60</strong>
+
+                    <button onclick="orderFood('Plain Dosa')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSb2xgc3YZmJHf4k9xJNslHctLIBRnOgrHSKStkpWMaQ&s=10" alt="Chapati">
+
+            <div class="food-content">
+
+                <h3>Chapati</h3>
+
+                <p>Soft Indian flatbread served with veg kurma.</p>
+
+                <div class="food-bottom">
+                    <strong>₹70</strong>
+
+                    <button onclick="orderFood('Chapati')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo-VV_fA7qm443F6GxHAydQJrWdmv6s3w5I30m-XtxE56XsCBGK9fjYBY&s=10" alt="Parotta">
+
+            <div class="food-content">
+
+                <h3>Parotta</h3>
+
+                <p>Flaky layered parotta with vegetable kurma.</p>
+
+                <div class="food-bottom">
+                    <strong>₹80</strong>
+
+                    <button onclick="orderFood('Parotta')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStPC2_EduLmNwA7ADje7x6KXvAb2IOIdCTBRhuDsX8V4XRjJykP4RoIN57&s=10" alt="Vegetable Noodles">
+
+            <div class="food-content">
+
+                <h3>Veg Noodles</h3>
+
+                <p>Stir-fried noodles with fresh vegetables.</p>
+
+                <div class="food-bottom">
+                    <strong>₹120</strong>
+
+                    <button onclick="orderFood('Veg Noodles')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- DESSERT -->
+
+    <div class="food-grid category hidden" id="dessert">
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgfid4KhJikDafMVCiKR--6VCxcYigM0JKKZdy6uJNFKXfqnesb-8ZmzUS&s=10" alt="Kesari">
+
+            <div class="food-content">
+
+                <h3>Kesari</h3>
+
+                <p>Traditional South Indian semolina sweet.</p>
+
+                <div class="food-bottom">
+                    <strong>₹50</strong>
+
+                    <button onclick="orderFood('Kesari')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkec9pgYv2u1ApSXX-2ZS4KvFYxjXW0kfArS3EHjcjaNdvnP5VtStv783D&s=10" alt="Gulab Jamun">
+
+            <div class="food-content">
+
+                <h3>Gulab Jamun</h3>
+
+                <p>Soft sweet dumplings soaked in sugar syrup.</p>
+
+                <div class="food-bottom">
+                    <strong>₹60</strong>
+
+                    <button onclick="orderFood('Gulab Jamun')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://i.pinimg.com/736x/4b/8e/17/4b8e17e191e90e7006af548497876662.jpg" alt="Payasam">
+
+            <div class="food-content">
+
+                <h3>Traditional Payasam</h3>
+
+                <p>Rich and creamy South Indian dessert.</p>
+
+                <div class="food-bottom">
+                    <strong>₹55</strong>
+
+                    <button onclick="orderFood('Traditional Payasam')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="food-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_DO0DPmOGug_E-LeAsZbAASvx1NY3kyQY2g1DpM12NDW1j0qM0UU_kFNe&s=10" alt="Ice Cream">
+
+            <div class="food-content">
+
+                <h3>Ice Cream</h3>
+
+                <p>Chilled creamy dessert in different flavours.</p>
+
+                <div class="food-bottom">
+                    <strong>₹70</strong>
+
+                    <button onclick="orderFood('Ice Cream')">
+                        Order
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHY US -->
+
+<section class="why-section" id="why">
+
+    <div class="section-heading">
+
+        <p class="section-label">WHY CHOOSE US</p>
+
+        <h2>More Than Just<br>A Meal</h2>
+
+    </div>
+
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <div class="why-icon">🌱</div>
+            <h3>Pure Vegetarian</h3>
+            <p>Every dish on our menu is completely vegetarian.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">🥗</div>
+            <h3>Fresh Ingredients</h3>
+            <p>Fresh vegetables and quality ingredients every day.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">👨‍🍳</div>
+            <h3>Traditional Recipes</h3>
+            <p>Authentic recipes inspired by South Indian cuisine.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">💰</div>
+            <h3>Affordable</h3>
+            <p>Great taste at prices that are comfortable for everyone.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SIGNATURE -->
+
+<section class="signature">
+
+    <div class="signature-content">
+
+        <p class="section-label">CHEF'S SPECIAL</p>
+
+        <h2>Our Signature<br>Coconut Payasam</h2>
+
+        <p>
+            A traditional combination prepared with
+            authentic South Indian flavours.
+        </p>
+
+        <button onclick="orderFood('Coconut Payasam')">
+            Order Signature Dish
+        </button>
+
+    </div>
+
+
+    <div class="signature-image">
+        <img src="https://i.pinimg.com/736x/4b/8e/17/4b8e17e191e90e7006af548497876662.jpg" alt="Coconut Payasam">
+    </div>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section class="review-section" id="reviews">
+
+    <div class="section-heading">
+
+        <p class="section-label">CUSTOMER REVIEWS</p>
+
+        <h2>What Our Customers Say</h2>
+
+    </div>
+
+
+    <div class="review-grid">
+
+        <div class="review-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                "The food was fresh and delicious.
+                Especially the masala dosa!"
+            </p>
+
+            <strong>Priya</strong>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                "Excellent vegetarian meals.
+                Good service and reasonable price."
+            </p>
+
+            <strong>Dharsini</strong>
+
+        </div>
+
+
+        <div class="review-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                "Very clean restaurant and
+                tasty traditional food."
+            </p>
+
+            <strong>Rani</strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EVENT -->
+
+<section class="event-section">
+
+    <div>
+
+        <p class="section-label">SPECIAL EVENTS</p>
+
+        <h2>Planning A Family Function?</h2>
+
+        <p>
+            Birthday, celebration, meeting or small gathering?
+            We are happy to help.
+        </p>
+
+        <a
+        href="https://wa.me/919876543210?text=Hello%20Green%20Leaf,%20I%20would%20like%20to%20make%20an%20event%20enquiry."
+        target="_blank">
+
+            Event Enquiry
+
+        </a>
+
+    
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-info">
+
+        <p class="section-label">CONTACT US</p>
+
+        <h2>Come & Enjoy<br>Good Food</h2>
+
+        <p>
+            Visit Green Leaf for a delicious
+            vegetarian dining experience.
+        </p>
+
+
+        <div class="contact-details">
+
+            <p>
+                📍 Main Road, Chennai, Tamil Nadu
+            </p>
+
+            <p>
+                📞 +91 1234567890
+            </p>
+
+            <p>
+                🕒 7:00 AM – 10:00 PM
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="map-box">
+
+        <div>
+            📍
+            <h3>Green Leaf Restaurant</h3>
+            <p>Email:greenleaf@gmail.com</p>
+            <p>Chennai, Tamil Nadu</p>
+        </div>
+
+        <div class="message-box" id="message">
+            <h3>Send a Message</h3>
+
+            <form id="messageForm">
+                <input type="text"  placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+
+                <textarea rows="5"
+                  placeholder="Your Message" required>
+                </textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-logo">
+        🌿 Green Leaf
+    </div>
+
+    <p>
+        Pure Vegetarian Restaurant
+    </p>
+
+    <div class="footer-links">
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 Green Leaf. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
